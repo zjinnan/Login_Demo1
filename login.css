@@ -1,0 +1,574 @@
+body, h1, h2, h3, h4, h5, h6, div, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+ul, ol, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:visited {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+input, textarea, button, select {
+    outline: none;
+    font-weight: normal;
+    color: #555;
+}
+img{
+    border:none;
+    vertical-align: middle;}
+*{outline: none;}
+html,
+body {
+    font-family: "Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei";
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+}
+@keyframes jianbian{
+    0%{background-image: linear-gradient(-135deg, #8CECFF 0%, #3385CC 100%);}
+    10%{background-image: linear-gradient(-139deg, #8CECFF 0%, #3385CC 100%);}
+    20%{background-image: linear-gradient(-145deg, #8CECFF 0%, #3385CC 100%);}
+    30%{background-image: linear-gradient(-150deg, #8CECFF 0%, #3385CC 100%);}
+    40%{background-image: linear-gradient(-155deg, #8CECFF 0%, #3385CC 100%);}
+    50%{background-image: linear-gradient(-160deg, #8CECFF 0%, #3385CC 100%);}
+    60%{background-image: linear-gradient(-155deg, #8CECFF 0%, #3385CC 100%);}
+    70%{background-image: linear-gradient(-150deg, #8CECFF 0%, #3385CC 100%);}
+    80%{background-image: linear-gradient(-145deg, #8CECFF 0%, #3385CC 100%);}
+    90%{background-image: linear-gradient(-135deg, #8CECFF 0%, #3385CC 100%);}
+    100%{background-image: linear-gradient(-135deg, #8CECFF 0%, #3385CC 100%);}
+}
+body{
+    animation:jianbian  1s infinite;
+    background: linear-gradient(-135deg, #8CECFF 0%, #3385CC 100%);
+}
+.clearfix {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.login-header{
+    position:absolute;
+    z-index: 300;
+    top:0;
+    height:20%;
+    width:100%;
+}
+.login-header-logo{
+    position:absolute;
+    z-index: 2;
+    bottom:0px;
+    height:40%; 
+    left:38%;
+    opacity: .9;
+}
+.login-header-title{
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    left: 45%;
+    margin: 0;
+    font-size: 40px;
+    color: #2C0F74;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.login-body {
+    position: absolute;
+    z-index: 100;
+    top: 11%;
+    bottom: 9%;
+    width: 100%;
+}
+.login-body-bg{
+    position: absolute;
+    z-index: 20;
+    top: 15%;
+    right: 60%;
+    border-radius: 10px;
+    opacity: 0.1;
+}
+.login-body-img{
+    width:150%;
+    height:150%;
+}
+.login-body-pane {
+    position: absolute;
+    z-index: 300;
+    top: 51%;
+    left: 53%;
+    width: 420px;
+    margin-top: -250px;
+    border-radius: 10px;
+    background-color: #fff;
+    opacity: 0.1;
+}
+ 
+.login-body-inputbox {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 44px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    border: solid 1px #0b6fd4;
+    border-radius: 5px;
+    background-position: 2% center;
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+}
+.login-body-inputbox input {
+    display: block;
+    width: 70%;
+    height: 44px;
+    margin-left: 50px;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    color: #3b3b3b;
+    outline: none;
+}
+.login-body-signin{
+    height: 50px;
+    line-height: 50px;
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 10px;
+    background-color: #0066D2;
+    color: #fff;
+    cursor: pointer
+}
+.login-body-signin:hover{
+    background-color: #0458b1;
+}
+.login-body-inputpassword {
+    background-image: url(./img/login-password.png);
+}
+.login-body-inputuser {
+    background-image: url(./img/login-name.png);
+}
+.login-body-inputdeskType {
+    background-image: url(./img/login-type.png);
+}
+.login-body-select{
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    list-style-type: none;
+    position: absolute;
+    top: 45px;
+    left: -1px;
+    width: 100%;
+    max-height: 122px;
+    overflow: auto;
+    border-left: solid 1px #6BB893;
+    border-right: solid 1px #6BB893;
+    border-bottom: solid 1px #6BB893;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #fff;
+}
+.login-body-select li{
+    display:block;
+    height:30px;
+    line-height:30px;
+    padding-left:5px;
+    cursor:pointer;
+}
+.login-body-select li:hover{
+    background:#ddd;
+}
+.login-body-selectbtn{
+    position: absolute;
+    z-index: 300;
+    top: 16px;
+    right: 12px;
+    width: 50px;
+    height: 50px;
+    background-size: 40% 30%;
+    cursor: pointer;
+}
+.selectup{
+    width: 0;
+    height: 0;
+    top:12px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #9e9e9e;
+}
+.selectdown{
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #9e9e9e;
+}
+.copyright{
+    position: absolute;
+    bottom:20px;
+    right:44%;
+    font-size: 14px;
+    color: #2C0F74;
+}
+.ok{
+    color:#3b3b3b !important;
+}
+.error{
+    color:red !important;
+}
+/* login-main Style */
+.login-main-header{
+    position:absolute;
+    z-index: 300;
+    top:0;
+    height:15%;
+    width:100%;
+    background: #fff;
+}
+.login-main-logo{
+    position:absolute;
+    z-index: 2;
+    bottom:20px;
+    height:60%; 
+    opacity: 0.9;
+    left:6%;
+}
+.login-main-title{
+    position: absolute;
+    z-index: 2;
+    bottom: 35px;
+    left: 13%;
+    margin: 0;
+    font-size: 40px;
+    color: #2C0F74;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.login-main-body{
+    width:800px;
+    margin:0 auto;
+    margin-top:15%;
+}
+.login-main-body div{
+    width:162px;
+    height:140px;
+    display: inline-block;
+    margin-left:4%;
+    margin-top:20px;
+    cursor: pointer;
+}
+.login-main-body p{
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0.67px;
+    line-height: 20px;
+    text-align: center;
+    margin-top:14px;
+}
+.login-main-body img{
+    margin-top:14%;
+    margin-left:31%;
+}
+.login-main-dd{
+    margin-top:0;
+    background-image: linear-gradient(-180deg, #F5515F 0%, #9F031B 100%);
+    border-radius: 5px;
+}
+.login-main-bl{
+    background-image: linear-gradient(-180deg, #7EDFE6 0%, #03919E 100%);
+    border-radius: 5px;
+}
+.login-main-yy{
+    background-image: linear-gradient(-180deg, #E6CF7E 0%, #F76B1C 100%);
+    border-radius: 5px;
+}
+.login-main-gl{
+    background-image: linear-gradient(-180deg, #7EE67E 0%, #039E03 100%);
+    border-radius: 5px;
+}
+.login-main-dd:hover img {
+    animation:first 0.2s;
+    -moz-animation:first 0.2s;
+    -webkit-animation:first 0.2s;
+    -o-animation:first 0.2s;
+    animation-iteration-count:3;
+    -webkit-animation-iteration-count:3; /* Safari 和 Chrome */
+}
+.login-main-bl:hover img {
+    animation:first 0.2s;
+    -moz-animation:first 0.2s;
+    -webkit-animation:first 0.2s;
+    -o-animation:first 0.2s;
+    animation-iteration-count:3;
+    -webkit-animation-iteration-count:3; /* Safari 和 Chrome */
+}
+.login-main-yy:hover img {
+    animation:first 0.2s;
+    -moz-animation:first 0.2s;
+    -webkit-animation:first 0.2s;
+    -o-animation:first 0.2s;
+    animation-iteration-count:3;
+    -webkit-animation-iteration-count:3; /* Safari 和 Chrome */
+}
+.login-main-gl:hover img {
+    animation:first 0.2s;
+    -moz-animation:first 0.2s;
+    -webkit-animation:first 0.2s;
+    -o-animation:first 0.2s;
+    animation-iteration-count:3;
+    -webkit-animation-iteration-count:3; /* Safari 和 Chrome */
+}
+@keyframes first{
+    0%{transform:rotate(0deg);}
+    25%{transform:rotate(-10deg);}
+    50%{transform:rotate(-10deg);}
+    75%{transform:rotate(10deg);}
+    100%{transform:rotate(10deg);}
+}
+@-moz-keyframes first{
+    0%{transform:rotate(0deg);}
+    25%{transform:rotate(-10deg);}
+    50%{transform:rotate(-10deg);}
+    75%{transform:rotate(10deg);}
+    100%{transform:rotate(10deg);}
+}
+@-webkit-keyframes first{
+    0%{transform:rotate(0deg);}
+    25%{transform:rotate(-10deg);}
+    50%{transform:rotate(-10deg);}
+    75%{transform:rotate(10deg);}
+    100%{transform:rotate(10deg);}
+}
+@-o-keyframes first{
+    0%{transform:rotate(0deg);}
+    25%{transform:rotate(-10deg);}
+    50%{transform:rotate(-10deg);}
+    75%{transform:rotate(10deg);}
+    100%{transform:rotate(10deg);}
+}
+.login-main-dd:hover p {
+    animation:second 0.6s;
+    -moz-animation:second 0.6s;
+    -webkit-animation:second 0.6s;
+    -o-animation:second 0.6s;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1; /* Safari 和 Chrome */
+}
+.login-main-bl:hover p {
+    animation:second 0.6s;
+    -moz-animation:second 0.6s;
+    -webkit-animation:second 0.6s;
+    -o-animation:second 0.6s;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1; /* Safari 和 Chrome */
+}
+.login-main-yy:hover p {
+    animation:second 0.6s;
+    -moz-animation:second 0.6s;
+    -webkit-animation:second 0.6s;
+    -o-animation:second 0.6s;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1; /* Safari 和 Chrome */
+}
+.login-main-gl:hover p {
+    animation:second 0.6s;
+    -moz-animation:second 0.6s;
+    -webkit-animation:second 0.6s;
+    -o-animation:second 0.6s;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1; /* Safari 和 Chrome */
+}
+ 
+@keyframes second{
+    0%{opacity: 1;}
+    25%{opacity: 0.5;}
+    50%{opacity: 0.1;}
+    75%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+@-moz-keyframes second{
+    0%{opacity: 1;}
+    25%{opacity: 0.5;}
+    50%{opacity: 0.1;}
+    75%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+@-webkit-keyframes second{
+    0%{opacity: 1;}
+    25%{opacity: 0.5;}
+    50%{opacity: 0.1;}
+    75%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+@-o-keyframes second{
+    0%{opacity: 1;}
+    25%{opacity: 0.5;}
+    50%{opacity: 0.1;}
+    75%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+.login-main-dd:hover  {
+    animation:threedd 0.6s;
+    -moz-animation:threedd 0.6s;
+    -webkit-animation:threedd 0.6s;
+    -o-animation:threedd 0.6s;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1; /* Safari 和 Chrome */
+}
+.login-main-bl:hover  {
+    animation:threebl 0.6s;
+    -moz-animation:threebl 0.6s;
+    -webkit-animation:threebl 0.6s;
+    -o-animation:threebl 0.6s;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1; /* Safari 和 Chrome */
+}
+.login-main-yy:hover  {
+    animation:threeyy 0.6s;
+    -moz-animation:threeyy 0.6s;
+    -webkit-animation:threeyy 0.6s;
+    -o-animation:threeyy 0.6s;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1; /* Safari 和 Chrome */
+}
+.login-main-gl:hover  {
+    animation:threegl 0.6s;
+    -moz-animation:threegl 0.6s;
+    -webkit-animation:threegl 0.6s;
+    -o-animation:threegl 0.6s;
+    animation-iteration-count:1;
+    -webkit-animation-iteration-count:1; /* Safari 和 Chrome */
+}
+ 
+@keyframes threegl{
+    0%{background-image: linear-gradient(-180deg, #7EE67E 0%, #039E03 100%);}
+    10%{background-image: linear-gradient(-175deg, #7EE67E 0%, #039E03 100%);}
+    20%{background-image: linear-gradient(-165deg, #7EE67E 0%, #039E03 100%);}
+    30%{background-image: linear-gradient(-155deg, #7EE67E 0%, #039E03 100%);}
+    40%{background-image: linear-gradient(-145deg, #7EE67E 0%, #039E03 100%);}
+    50%{background-image: linear-gradient(-135deg, #7EE67E 0%, #039E03 100%);}
+    60%{background-image: linear-gradient(-145deg, #7EE67E 0%, #039E03 100%);}
+    70%{background-image: linear-gradient(-155deg, #7EE67E 0%, #039E03 100%);}
+    80%{background-image: linear-gradient(-165deg, #7EE67E 0%, #039E03 100%);}
+    90%{background-image: linear-gradient(-175deg, #7EE67E 0%, #039E03 100%);}
+    100%{background-image: linear-gradient(-180deg, #7EE67E 0%, #039E03 100%);}
+}
+@keyframes threedd{
+    0%{background-image: linear-gradient(-180deg, #F5515F 0%, #9F031B 100%);}
+    10%{background-image: linear-gradient(-175deg, #F5515F 0%, #9F031B 100%);}
+    20%{background-image: linear-gradient(-165deg, #F5515F 0%, #9F031B 100%);}
+    30%{background-image: linear-gradient(-155deg, #F5515F 0%, #9F031B 100%);}
+    40%{background-image: linear-gradient(-145deg, #F5515F 0%, #9F031B 100%);}
+    50%{background-image: linear-gradient(-135deg, #F5515F 0%, #9F031B 100%);}
+    60%{background-image: linear-gradient(-145deg, #F5515F 0%, #9F031B 100%);}
+    70%{background-image: linear-gradient(-155deg, #F5515F 0%, #9F031B 100%);}
+    80%{background-image: linear-gradient(-165deg, #F5515F 0%, #9F031B 100%);}
+    90%{background-image: linear-gradient(-175deg, #F5515F 0%, #9F031B 100%);}
+    100%{background-image: linear-gradient(-180deg, #F5515F 0%, #9F031B 100%);}
+}
+@keyframes threebl{
+    0%{background-image: linear-gradient(-180deg, #7EDFE6 0%, #03919E 100%);}
+    10%{background-image: linear-gradient(-175deg, #7EDFE6 0%, #03919E 100%);}
+    20%{background-image: linear-gradient(-165deg, #7EDFE6 0%, #03919E 100%);}
+    30%{background-image: linear-gradient(-155deg, #7EDFE6 0%, #03919E 100%);}
+    40%{background-image: linear-gradient(-145deg, #7EDFE6 0%, #03919E 100%);}
+    50%{background-image: linear-gradient(-135deg, #7EDFE6 0%, #03919E 100%);}
+    60%{background-image: linear-gradient(-145deg, #7EDFE6 0%, #03919E 100%);}
+    70%{background-image: linear-gradient(-155deg, #7EDFE6 0%, #03919E 100%);}
+    80%{background-image: linear-gradient(-165deg, #7EDFE6 0%, #03919E 100%);}
+    90%{background-image: linear-gradient(-175deg, #7EDFE6 0%, #03919E 100%);}
+    100%{background-image: linear-gradient(-180deg, #7EDFE6 0%, #03919E 100%);}
+}
+@keyframes threeyy{
+    0%{background-image: linear-gradient(-180deg, #E6CF7E 0%, #F76B1C 100%);}
+    10%{background-image: linear-gradient(-175deg, #E6CF7E 0%, #F76B1C 100%);}
+    20%{background-image: linear-gradient(-165deg, #E6CF7E 0%, #F76B1C 100%);}
+    30%{background-image: linear-gradient(-155deg, #E6CF7E 0%, #F76B1C 100%);}
+    40%{background-image: linear-gradient(-145deg, #E6CF7E 0%, #F76B1C 100%);}
+    50%{background-image: linear-gradient(-135deg, #E6CF7E 0%, #F76B1C 100%);}
+    60%{background-image: linear-gradient(-145deg, #E6CF7E 0%, #F76B1C 100%);}
+    70%{background-image: linear-gradient(-155deg, #E6CF7E 0%, #F76B1C 100%);}
+    80%{background-image: linear-gradient(-165deg, #E6CF7E 0%, #F76B1C 100%);}
+    90%{background-image: linear-gradient(-175deg, #E6CF7E 0%, #F76B1C 100%);}
+    100%{background-image: linear-gradient(-180deg, #E6CF7E 0%, #F76B1C 100%);}
+}
+ 
+/* 测试 Style */
+.star{
+    position: absolute;
+    left:10%;
+    top:24%;
+    /* -moz-transform: rotate(35deg); 
+    -webkit-transform: rotate(35deg); 
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg); */
+}
+.star-center{
+    position: absolute;
+    margin-left:40px;
+    animation:bling  1s infinite;
+}
+.star-center-child{
+    position: absolute;
+    width: 0;
+    height: 0; 
+    display: block;
+    border-right: 6px solid transparent; 
+    border-bottom: 18px solid #2C0F74; 
+    border-left: 6px solid transparent;
+}
+.star-center-top{
+    position: absolute;
+}
+.star-center-bottom{
+    position: absolute;
+    top:18px;
+    -moz-transform: rotate(180deg); 
+    -webkit-transform: rotate(180deg); 
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.star-center-left{
+    position: absolute;
+    top:8px;
+    left:-6px;
+    -moz-transform: rotate(-90deg); 
+    -webkit-transform: rotate(-90deg); 
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+.star-center-right{
+    position: absolute;
+    top:8px;
+    left:6px;
+    -moz-transform: rotate(90deg); 
+    -webkit-transform: rotate(90deg); 
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+@keyframes bling{
+    0%{opacity: 1;}
+    25%{opacity: 0.8;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.4;}
+    100%{opacity: 0.2;}
+}

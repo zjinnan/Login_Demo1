@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统一登录平台</title>
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-header">
+        <img src="img/logo.png" alt="logo" class="login-header-logo"/>
+        <p class="login-header-title">统一登录平台</p>
+    </div>
+    <div class="login-body">
+        <div class="login-body-bg">
+            <img class="login-body-img" src="img/bg.png"/>
+        </div>
+        <div class="login-body-pane">
+            <!-- <h1>登录</h1> -->
+            <form class="">
+                <div class="login-body-inputbox login-body-inputuser">
+                    <input type="text" value="请输入用户名" id="username"/>
+                </div>
+                <div class="login-body-inputbox login-body-inputpassword">
+                    <input type="text" value="请输入密码" id="pwd"/>
+                </div>
+                <div class="login-body-inputbox"> 
+                    <input type="text" value="调度员" readonly="readonly" style="margin-left:2px;color:#000" id="userType"/>
+                    <div class="login-body-selectbtn selectdown" id="slideDown"></div>
+                    <div class="login-body-selectbtn selectup" id="slideUp"></div>
+                    <ul class="login-body-select" id="userTypes">
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                </div>
+                <div class="login-body-signin">登录</div>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">© 科技有限公司    版权所有</div>
+</body>
+<script src="login.js"></script>
+</html>
